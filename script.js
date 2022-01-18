@@ -11,7 +11,7 @@ const requestAudioAccess = () => {
             getUserMedia({ audio: true }).
             then(stream => setAudioStream(stream)).
             catch((err) =>
-                alert("This pen requires a microphone to work properly."));
+                alert("This web page requires a microphone to work properly."));
 
     } else alert("Your browser does not support required microphone access.");
 };
